@@ -52,7 +52,7 @@ class Song
     song    
   end
 
-  def create_from_filename(str) 
+  def self.create_from_filename(str) 
     song = self.new
     file = str.chomp(".mp3")
     new_file = file.split(" - ")
