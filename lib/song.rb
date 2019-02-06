@@ -60,7 +60,7 @@ class Song
     song.artist_name = new_file[0] 
     song.name = new_file[1]
     song    
-    end
+  end
 
   def self.destroy_all
     self.all.clear
