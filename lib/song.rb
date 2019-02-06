@@ -59,7 +59,7 @@ class Song
     new_file = file.split("-")
     song.artist_name = new_file[0] 
     song.name = new_file[1]
-    song    
+    song.save    
   end
 
   def self.destroy_all
