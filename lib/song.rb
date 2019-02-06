@@ -46,9 +46,10 @@ class Song
   
   def self.new_from_filename(str)
     song = self.new
-      str.split("-").each_with_object([]) do |name, song| 
-        artist_name = name 
-        name = song
+    file = str.chomp(".mp3")
+    new_file = file.split("-")
+        song.artist_name = new_file[0] 
+        song.name = new_file[1]
       end
   end
 
